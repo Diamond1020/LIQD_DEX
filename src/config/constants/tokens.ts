@@ -20,17 +20,17 @@ export const CAKE: { [chainId: number]: Token } = {
 export const LIQD: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE',
+    '0x730098CCCE6db4971B0C2865ccef343caBA671D0',
     9,
     'LIQD',
-    'Baby Lovely Inu',
+    'LIQD',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     '0xB443B78c07E1Ce810C37921da36A175697AfA963',
     18,
     'LIQD',
-    'Baby Lovely Inu',
+    'LIQD',
   ),
 }
 
@@ -85,7 +85,7 @@ const tokens = {
   liqd: {
     symbol: 'LIQD',
     address: {
-      56: '0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE',
+      56: '0x730098CCCE6db4971B0C2865ccef343caBA671D0',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe'
     },
     decimals: 9,

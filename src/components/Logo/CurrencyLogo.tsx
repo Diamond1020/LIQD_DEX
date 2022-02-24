@@ -40,7 +40,7 @@ export default function CurrencyLogo({
   }
 
   if (currency?.symbol === 'LIQD') {
-    return <StyledLogo srcs={['/images/tokens/0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE.png']} size={size} style={style} alt="Token Logo" />
+    return <StyledLogo srcs={['/images/tokens/0x730098CCCE6db4971B0C2865ccef343caBA671D0.png']} size={size} style={style} alt="Token Logo" />
   }
 
   return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />

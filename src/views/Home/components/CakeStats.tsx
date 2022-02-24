@@ -17,9 +17,11 @@ const StyledCakeStats = styled(Card)`
 const Row = styled.div`
   align-items: center;
   display: flex;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   justify-content: space-between;
   margin-bottom: 8px;
+  color: #fff;
 `
 
 const CakeStats = () => {
@@ -53,7 +55,7 @@ const CakeStats = () => {
         </Heading>
         <Row>
           <Text bold color="#fff" fontSize="16px">{t('Total Supply')}</Text>
-          {getBalanceNumber(totalSupply, 9) && <CardValue color="#fff "  fontSize="16px" value={getBalanceNumber(totalSupply, 9)} />}
+          {getBalanceNumber(totalSupply, 9) && <CardValue color="#fff"  fontSize="16px" value={getBalanceNumber(totalSupply, 9)} />}
         </Row>
         <Row>
           <Text bold color="#fff" fontSize="16px">{t('Total Burned')}</Text>
@@ -61,7 +63,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text bold color="#fff" fontSize="16px">{t('Circulating Supply')}</Text>
-          {cakeSupply && <CardValue color="#fff " fontSize="16px" decimals={0} value={cakeSupply} />}
+          {cakeSupply && <CardValue color="#fff" fontSize="16px" decimals={0} value={cakeSupply} />}
         </Row>
         <Row>
           <Text bold color="#fff" fontSize="16px">{t('Market Cap')}</Text>
@@ -69,7 +71,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text bold color="#fff" fontSize="16px">{t('Rewards LIQD/block')}</Text>
-          <CardValue color="#fff "  fontSize="16px" decimals={2} value={Number(farm.liqdPerBlock)} />
+          <CardValue color="#fff"  fontSize="16px" decimals={2} value={Number(farm.liqdPerBlock)} />
         </Row>
       </CardBody>
     </StyledCakeStats>

@@ -16,6 +16,10 @@ const getFarmBaseTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPriceBusd: B
     return hasTokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : BIG_ZERO
   }
 
+  if (farm.quoteToken.symbol === 'USDC') {
+    return hasTokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : BIG_ZERO
+  }
+
   if (farm.quoteToken.symbol === 'USDT') {
     return hasTokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : BIG_ZERO
   }
@@ -55,6 +59,13 @@ const getFarmBaseTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPriceBusd: B
       : BIG_ZERO
   }
 
+  if (quoteTokenFarm.quoteToken.symbol === 'USDC') {
+    const quoteTokenInBusd = quoteTokenFarm.tokenPriceVsQuote
+    return hasTokenPriceVsQuote && quoteTokenInBusd
+      ? new BigNumber(farm.tokenPriceVsQuote).times(quoteTokenInBusd)
+      : BIG_ZERO
+  }
+
   // Catch in case token does not have immediate or once-removed BUSD/wBNB quoteToken
   return BIG_ZERO
 }
@@ -65,6 +76,10 @@ const getFarmQuoteTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPriceBusd: 
   }
 
   if (farm.quoteToken.symbol === 'USDT') {
+    return BIG_ONE
+  }
+
+  if (farm.quoteToken.symbol === 'USDC') {
     return BIG_ONE
   }
 
@@ -88,13 +103,16 @@ const getFarmQuoteTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPriceBusd: 
     return quoteTokenFarm.tokenPriceVsQuote ? new BigNumber(quoteTokenFarm.tokenPriceVsQuote) : BIG_ZERO
   }
 
+  if (quoteTokenFarm.quoteToken.symbol === 'USDC') {
+    return quoteTokenFarm.tokenPriceVsQuote ? new BigNumber(quoteTokenFarm.tokenPriceVsQuote) : BIG_ZERO
+  }
+
   return BIG_ZERO
 }
 
 const fetchFarmsPrices = async (farms) => {
   const bnbBusdFarm = farms.find((farm: Farm) => farm.pid === 4)
   const bnbPriceBusd = bnbBusdFarm.tokenPriceVsQuote ? BIG_ONE.div(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
-
   const farmsWithPrices = farms.map((farm) => {
     const quoteTokenFarm = getFarmFromTokenSymbol(farms, farm.quoteToken.symbol)
     const baseTokenPrice = getFarmBaseTokenPrice(farm, quoteTokenFarm, bnbPriceBusd)

@@ -89,7 +89,7 @@ export const fetchUserPendingRewards = async (account) => {
   )
 
   // Cake / Cake pool
-  // const pendingReward = await masterChefContract.pendingliqd('0', account)
+  // const pendingReward = await masterChefContract.pendingLIQD('0', account)
 
   return { ...pendingRewards, 0: BIG_ZERO }
 }

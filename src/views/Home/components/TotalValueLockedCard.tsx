@@ -29,7 +29,7 @@ const TotalValueLockedCard = () => {
         </Heading>
         {tvl ? (
           <>
-            <Text bold color="#fff" fontSize="54px" mb="20px">${tvl.toFixed(2)}</Text>
+            <Text bold color="text" fontSize="54px" mb="20px">${tvl.toFixed(2)}</Text>
             <Text bold color="#fff">{t('Across all Farms and Pools')}</Text>
           </>
         ) : (

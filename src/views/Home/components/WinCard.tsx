@@ -57,7 +57,7 @@ const WinCard = () => {
           Earn Up TO
         </Heading>
 
-        <CardValue color="#fff"  fontSize="24px" surfix="%" decimals={2} value={topFarms[0]?topFarms[0].apr:0} />
+        <CardValue color="text"  fontSize="24px" surfix="%" decimals={2} value={topFarms[0]?topFarms[0].apr:0} />
         <AllApr as="a" href="/#/farms">
           <Text color="#fff">APR in Farms</Text>
           <Text color="#fff">&gt;&gt;&gt;</Text>

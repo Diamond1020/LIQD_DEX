@@ -19,12 +19,12 @@
       "logoURI": "https://LIQDSWAP.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
     {
-      "name": "Baby Lovely Inu",
+      "name": "LIQD",
       "symbol": "LIQD",
-      "address": "0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE",
+      "address": "0x730098CCCE6db4971B0C2865ccef343caBA671D0",
       "chainId": 56,
       "decimals": 9,
-      "logoURI": "https://LIQDSWAP.finance/images/tokens/0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE.png"
+      "logoURI": "https://LIQDSWAP.finance/images/tokens/0x730098CCCE6db4971B0C2865ccef343caBA671D0.png"
     },
     {
       "name": "BUSD Token",

@@ -35,11 +35,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'PoolIcon',
     href: '/pools',
   },
-  {
-    label: t('Referral'),
-    icon: 'GroupsIcon',
-    href: '/referral',
-  },
+  // {
+  //   label: t('Referral'),
+  //   icon: 'GroupsIcon',
+  //   href: '/referral',
+  // },
   // {
   //   label: t('Lottery (soon)'),
   //   icon: 'TicketIcon',
@@ -51,11 +51,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: 'Telegram',
-        href: 'https://t.me/Baby_Lovely_Inu',
+        href: 'https://t.me/liqdswap_social',
       },
       {
         label: 'Twitter',
-        href: 'https://twitter.com/Baby_Lovely_Inu',
+        href: 'https://twitter.com/liqdswap_social',
       },
     ]
   },
@@ -66,11 +66,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: 'Dextools',
-        href: 'https://www.dextools.io/app/bsc/pair-explorer/0xC680DCC0b7c588DfD2bdE19f543E37Dfd276ae31',
+        href: 'https://www.dextools.io/app/bsc/pair-explorer/0xeacCD96a9Af75364583D16cE32c8124eC6DE6a9d',
       },
       {
         label: 'Poocoin',
-        href: 'https://poocoin.app/tokens/0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE',
+        href: 'https://poocoin.app/tokens/0x730098CCCE6db4971B0C2865ccef343caBA671D0',
       },
     ]
   },
@@ -80,16 +80,16 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: 'Audit',
-        href: 'https://www.liqdswap.com/Security-Audit.pdf',
+        href: 'https://liqdex.io/Security-Audit.pdf',
       },
       {
         label: 'Doc',
-        href: 'https://www.liqdswap.com/Whitepapers.pdf',
+        href: 'https://liqdex.io/Whitepapers.pdf',
       },
-      {
-        label: 'Website',
-        href: 'https://www.liqdswap.com/',
-      },
+      // {
+      //   label: 'Website',
+      //   href: 'https://liqdex.io/',
+      // },
       {
         label: 'Github',
         href: 'https://github.com/liqdswap',

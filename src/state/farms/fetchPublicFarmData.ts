@@ -69,7 +69,7 @@ const fetchFarm = async (farm: Farm): Promise<PublicFarmData> => {
   const [tokenBalanceLP, quoteTokenBalanceLP, lpTokenBalanceMC, singleTokenBalanceMC, lpTotalSupply, tokenDecimals, quoteTokenDecimals] =
     await multicall(erc20, calls)
 
-  const [info, totalAllocPoint, liqdPerBlock, totalStakedAmount] =
+  const [info, totalAllocPoint, liqdPerBlock] =
   pid || pid === 0
     ? await multicall(masterchefABI, [
         {
@@ -84,20 +84,12 @@ const fetchFarm = async (farm: Farm): Promise<PublicFarmData> => {
         {
           address: getMasterChefAddress(),
           name: 'liqdPerBlock',
-        },
-        {
-          address: getMasterChefAddress(),
-          name: 'totalStakedAmount',
-        },
+        }
       ])
     : [null, null]
 
-  let lpTokenRatio;
   // Ratio in % of LP tokens that are staked in the MC, vs the total number in circulation
-  if (token.symbol === "LIQD" && isTokenOnly)
-    lpTokenRatio = new BigNumber(totalStakedAmount).div(new BigNumber(lpTotalSupply))
-  else
-    lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
+  const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
     
   // Raw amount of token in the LP, including those not staked
   const tokenAmountTotal = new BigNumber(tokenBalanceLP).div(BIG_TEN.pow(tokenDecimals))

@@ -22,7 +22,7 @@ const Hero = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
   padding-top: 60px;
   text-align: center;
 
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Text bold fontSize="40px" mb="10px" color="#fff">
+        <Text bold fontSize="50px" mb="10px" color="#fe4350">
           {t('LIQD SWAP')}
         </Text>
         
