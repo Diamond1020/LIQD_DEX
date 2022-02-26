@@ -51,11 +51,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: 'Telegram',
-        href: 'https://t.me/liqdswap_social',
+        href: 'https://t.me/liqdex_social',
       },
       {
         label: 'Twitter',
-        href: 'https://twitter.com/liqdswap_social',
+        href: 'https://twitter.com/liqdex_social',
       },
     ]
   },
@@ -70,7 +70,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
       {
         label: 'Poocoin',
-        href: 'https://poocoin.app/tokens/0x730098CCCE6db4971B0C2865ccef343caBA671D0',
+        href: 'https://poocoin.app/tokens/0x69156723db94f1278e709Fd1025b51cdD5162234',
       },
     ]
   },
@@ -78,10 +78,6 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('More'),
     icon: 'MoreIcon',
     items: [
-      {
-        label: 'Audit',
-        href: 'https://liqdex.io/Security-Audit.pdf',
-      },
       {
         label: 'Doc',
         href: 'https://liqdex.io/Whitepapers.pdf',
@@ -92,15 +88,15 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: 'Github',
-        href: 'https://github.com/liqdswap',
+        href: 'https://github.com/liqdex',
       },
     ]
   },
-  // {
-  //   label: t('Join Our Farm'),
-  //   icon: 'IfoIcon',
-  //   href: '/bets',
-  // },
+  {
+    label: t('LIQDAO'),
+    icon: 'IfoIcon',
+    href: 'https://bond.liqdex.io',
+  },
 ]
 
 export default config

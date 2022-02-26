@@ -84,7 +84,7 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Text bold fontSize="50px" mb="10px" color="#fe4350">
-          {t('LIQD SWAP')}
+          {t('LIQDEX')}
         </Text>
         
         <Text color="#fff">{t('The Best Yield Farm on BSC.')}</Text>

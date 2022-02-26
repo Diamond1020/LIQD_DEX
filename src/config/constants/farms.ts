@@ -7,7 +7,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LIQD',
     lpAddresses: {
       97: '',
-      56: '0xeacCD96a9Af75364583D16cE32c8124eC6DE6a9d',
+      56: '0x5734041F6ed8f5B5f97c6169cf3D9551c441Fe69',
     },
     isTokenOnly: true,
     token: tokens.liqd,
@@ -18,7 +18,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LIQD-BUSD',
     lpAddresses: {
       97: '',
-      56: '0xeacCD96a9Af75364583D16cE32c8124eC6DE6a9d',
+      56: '0x5734041F6ed8f5B5f97c6169cf3D9551c441Fe69',
     },
     token: tokens.liqd,
     quoteToken: tokens.busd,
@@ -28,7 +28,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LIQD-USDT',
     lpAddresses: {
       97: '',
-      56: '0x27a083832D99D113F28ef519056344cf0cb36D61',
+      56: '0x6d749CEEab7CD37ff8EeF0263816619d1d0e3Bad',
     },
     token: tokens.liqd,
     quoteToken: tokens.usdt,
@@ -38,7 +38,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LIQD-USDC',
     lpAddresses: {
       97: '',
-      56: '0xCE2ce35f4977D95FB9819137c18BA2545b53B10a',
+      56: '0xB86fD1C3B81ceB2247611109c3B58E9Fa6ffE4be',
     },
     token: tokens.liqd,
     quoteToken: tokens.usdc,

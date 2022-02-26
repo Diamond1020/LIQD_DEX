@@ -78,14 +78,14 @@ justify-content: space-between;
                     <Container>
                          <Heading size="md">Your Referral Link</Heading>
                          {/* <CopyToClipboard text={`https://polycherry.com/?ref=${rot13(account)}`} onCopy={()=> {handleClick()}}> */}
-                         <CopyToClipboard text={`https://LIQDSWAP.finance/?ref=${rot13(account)}`} onCopy={()=> {handleClick()}}>
+                         <CopyToClipboard text={`https://liqdex.io/?ref=${rot13(account)}`} onCopy={()=> {handleClick()}}>
                             <Button variant="primary" mt="8px">Copy</Button>
                         </CopyToClipboard>
                     </Container>
                 </CardBody>
                 <StyledFooter >
                     {/* <StyledLink style={{"margin":"auto"}}>{`https://polycherry.com/?ref=${rot13(account)}`}</StyledLink> */}
-                    <StyledLink style={{"margin":"auto"}}>{`https://LIQDSWAP.finance/?ref=${rot13(account)}`}</StyledLink>
+                    <StyledLink style={{"margin":"auto"}}>{`https://liqdex.io/?ref=${rot13(account)}`}</StyledLink>
                 </StyledFooter>
             {/* <ToastContainer toasts={toasts} onRemove={handleRemove} /> */}
         </div>
