@@ -3902,7 +3902,7 @@ var Logo = function (_a) {
         React.createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$d, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$e, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "BabyLovelySwap home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "BabyLovelySwap home page" }, innerLogo))));
+        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Liqdex home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Liqdex home page" }, innerLogo))));
 };
 var Logo$1 = React.memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$d, templateObject_2$7;
@@ -4185,7 +4185,7 @@ var templateObject_1$a;
 var PriceLink = styled.a(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://babylovelyswap.finance/#/swap?outputCurrency=0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE", target: "_blank" },
+    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://dex.liqdex.io/#/swap?outputCurrency=0x04Df8C91FCcFd703cD15047bF6C1cE76D335C6cE", target: "_blank" },
         React.createElement(Icon$X, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(10)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };

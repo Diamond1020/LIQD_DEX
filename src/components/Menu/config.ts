@@ -35,6 +35,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'PoolIcon',
     href: '/pools',
   },
+  {
+    label: t('Bonds'),
+    icon: 'IfoIcon',
+    href: 'https://app.liqdex.io',
+  },
   // {
   //   label: t('Referral'),
   //   icon: 'GroupsIcon',
@@ -80,22 +85,13 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: 'Doc',
-        href: 'https://liqdex.io/Whitepapers.pdf',
+        href: 'https://dex.liqdex.io/Whitepapers.pdf',
       },
-      // {
-      //   label: 'Website',
-      //   href: 'https://liqdex.io/',
-      // },
       {
         label: 'Github',
         href: 'https://github.com/liqdex',
       },
     ]
-  },
-  {
-    label: t('LIQDAO'),
-    icon: 'IfoIcon',
-    href: 'https://bond.liqdex.io',
   },
 ]
 

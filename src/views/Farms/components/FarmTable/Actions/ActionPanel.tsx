@@ -171,7 +171,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
           {farm.depositFee === '0%' && farm.withdrawFee === '0%'? <NofeeTag /> :
           <div>
             {farm.depositFee !== '0%' ? <Text>{t('Deposit Fee')}:{farm.depositFee}</Text> : null}
-            {farm.withdrawFee !== '0%' ?<Text>{t('Withdraw Fee')}:{farm.withdrawFee}</Text> : null}
+            {/* {farm.withdrawFee !== '0%' ?<Text>{t('Withdraw Fee')}:{farm.withdrawFee}</Text> : null} */}
           </div>
           }
       </TagsContainer>

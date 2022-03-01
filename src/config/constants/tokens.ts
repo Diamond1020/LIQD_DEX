@@ -89,7 +89,7 @@ const tokens = {
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe'
     },
     decimals: 9,
-    projectLink: 'https://liqdex.io/',
+    projectLink: 'https://dex.liqdex.io/',
   },
   cake: {
     symbol: 'CAKE',

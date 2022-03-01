@@ -11,9 +11,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
   }
   body {
-    background-image: url(../background.png);
+    // background-image: url(../background.png);
     background-size: cover;
-    // background: linear-gradient(180deg, #fe4350 0%, #fe6d6f 100%);
+    background: #0A0A3C;
     height: auto;
     // img {
     //   height: auto;

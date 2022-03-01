@@ -16,7 +16,7 @@
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://liqdex.io/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
+      "logoURI": "https://dex.liqdex.io/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
     {
       "name": "LIQD",
@@ -24,7 +24,7 @@
       "address": "0x69156723db94f1278e709Fd1025b51cdD5162234",
       "chainId": 56,
       "decimals": 9,
-      "logoURI": "https://liqdex.io/images/tokens/0x69156723db94f1278e709Fd1025b51cdD5162234.png"
+      "logoURI": "https://dex.liqdex.io/images/tokens/0x69156723db94f1278e709Fd1025b51cdD5162234.png"
     },
     {
       "name": "BUSD Token",

@@ -83,7 +83,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Text bold fontSize="50px" mb="10px" color="#fe4350">
+        <Text bold fontSize="50px" mb="10px" color="#fc334f">
           {t('LIQDEX')}
         </Text>
         
