@@ -14,7 +14,7 @@ import { ToastListener } from './contexts/ToastsContext'
 import PageLoader from './components/Loader/PageLoader'
 import EasterEgg from './components/EasterEgg'
 import history from './routerHistory'
-// Views included in the main bundle
+// Views included in the main bundle 
 import Pools from './views/Pools'
 import Swap from './views/Swap'
 import {
