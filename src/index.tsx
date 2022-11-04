@@ -14,7 +14,7 @@ function Updaters() {
       <ListsUpdater />
       <TransactionUpdater />
       <MulticallUpdater />
-    </>
+    </> 
   )
 }
 
